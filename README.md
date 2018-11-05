@@ -24,5 +24,12 @@ Before run, make sure right POST body request structure - JSON format is defined
         And also, add make header as below
               Content-Type:application/json
 
-Since, I have limited time, I did not created custom exceptions on my own like, handling invalid POST body structure.
+Since, I have limited time, I did not create custom exceptions on my own like, handling invalid POST body structure.
 I think, I covered at least Framework exceptions that can be triggered for any exceptions.
+
+Some Debug tips:
+
+1. Terminate all Launches before running the program. Generally, program runs on 8080 port.
+2. If any Maven -compile error due to running on JRE instead of JDK. Please change as below.
+    Windows -> Preferences -> Java -> Install JRE's - Add JDK which you added as part of your classpath,if it has only JRE.
+                                                      Select JDK and click ok.
